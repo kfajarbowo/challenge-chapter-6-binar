@@ -7,6 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+.env
+.eslintrc.cjs
+
 node_modules
 dist
 dist-ssr
@@ -21,6 +24,5 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-.env
-.eslintrc.cjs
+
 *.sw?

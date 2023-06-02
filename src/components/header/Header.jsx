@@ -51,7 +51,7 @@ const Header = () => {
 		return () => {
 			window.removeEventListener('scroll', controlNavbar);
 		};
-	}, [lastScrollY]);
+	});
 
 	const searchQueryHandler = event => {
 		if (event.key === 'Enter' && query.length > 0) {

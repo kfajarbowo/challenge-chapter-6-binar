@@ -5,7 +5,8 @@ import { setIsLoggedIn, setToken, setUser } from '../store/auth-reducer';
 export const login = (data, navigate) => async dispatch => {
 	try {
 		const response = await axios.post(
-			`${import.meta.env.VITE_APP_AUTH_API}/api/v1/auth/login`,
+			// `${import.meta.env.VITE_APP_AUTH_API}/api/v1/auth/login`,
+			`https://km4-challenge-5-api.up.railway.app/api/v1/auth/login`,
 			data,
 			{
 				'Content-Type': 'application/json',
@@ -35,7 +36,7 @@ export const login = (data, navigate) => async dispatch => {
 export const register = (data, navigate) => async dispatch => {
 	try {
 		const response = await axios.post(
-			`${import.meta.env.VITE_APP_AUTH_API}/api/v1/auth/register`,
+			`https://km4-challenge-5-api.up.railway.app/api/v1/auth/register`,
 			data,
 			{
 				'Content-Type': 'application/json',

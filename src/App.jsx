@@ -65,7 +65,8 @@ function App() {
 	};
 
 	return (
-		<GoogleOAuthProvider clientId={import.meta.env.VITE_APP_GOOGLE_CLIENT_ID}>
+		<GoogleOAuthProvider clientId='638538265910-hrr5vq8cugv9ku1l9kqprokgplod6oh0.apps.googleusercontent.com'>
+		{/* <GoogleOAuthProvider clientId={import.meta.env.VITE_APP_GOOGLE_CLIENT_ID}> */}
 			<BrowserRouter>
 				<Header />
 				<Routes>
